@@ -22,7 +22,7 @@ function Cadastro() {
         <InputCadastro texto="Repita a senha" tipo="password"></InputCadastro>
         <InputCadastro texto="UserName" tipo="text"></InputCadastro>
 
-        <LinhaSeparacao></LinhaSeparacao>
+        <LinhaSeparacao tamanho = "17vw"></LinhaSeparacao>
         
         <div className='w-[15vw] flex justify-center items-center flex-col'>
           <Link className='w-[10vw] flex justify-start mb-3' href={"#"}>

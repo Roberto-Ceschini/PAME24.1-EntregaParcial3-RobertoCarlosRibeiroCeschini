@@ -27,7 +27,7 @@ function Login() {
             </div>
 
             <BotaoLogin texto={"Logar"} link={"/index"}></BotaoLogin>
-            <LinhaSeparacao></LinhaSeparacao>
+            <LinhaSeparacao tamanho = "17vw"></LinhaSeparacao>
 
             <div className='w-[15vw] flex justify-center items-center flex-col'>
 
