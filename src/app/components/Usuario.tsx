@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-function SideBarUsuario({ texto, imagem}: any) {
+function Usuario({ texto, imagem}: any) {
     return (
 
         <>
@@ -15,4 +15,4 @@ function SideBarUsuario({ texto, imagem}: any) {
     )
 }
 
-export default SideBarUsuario
+export default Usuario

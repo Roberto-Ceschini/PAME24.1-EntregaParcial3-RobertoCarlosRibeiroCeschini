@@ -7,7 +7,7 @@ import iconeNotificacoes from '@/app/components/Imagens/iconeNotificacao.png'
 import iconePerfil from '@/app/components/Imagens/iconePerfil.png'
 import fotoPerfil from '@/app/components/Imagens/fotoPerfil.jpeg'
 import LinhaSeparacao from './LinhaSeparacao'
-import SideBarUsuario from './SideBarUsuario'
+import Usuario from './Usuario'
 
 function SideBar() {
   return (
@@ -20,7 +20,7 @@ function SideBar() {
         <SideBarButtons texto = "Perfil" imagem = {iconePerfil} link = "#"></SideBarButtons>
         <div className='mt-75'></div>
         <LinhaSeparacao tamanho = "16vw"></LinhaSeparacao>
-        <SideBarUsuario texto = 'Usuario' imagem = {fotoPerfil}></SideBarUsuario>
+        <Usuario texto = 'Usuario' imagem = {fotoPerfil}></Usuario>
         <div>emailUsuario@gmail.com</div>
 
     </div>
