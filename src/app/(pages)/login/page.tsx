@@ -11,7 +11,7 @@ import googleImage from '@/app/components/Imagens/logoGoogle.png'
 function Login() {
   return (
     
-    <div className=" w-screen h-screen bg-gradient-to-t from-rose-300 to-blue-300 flex items-center justify-center">
+    <div className="w-screen h-screen bg-gradient-to-t from-rose-300 to-blue-300 flex items-center justify-center">
         <div className="w-[20vw] h-[70vh] bg-white rounded-xl flex items-center justify-center flex-col 
         gap-8 shadow-2xl shadow-black">
 
@@ -28,16 +28,23 @@ function Login() {
 
             <div className='w-[17vw] border-t border-gray-200 mt-4'></div>
 
-            <div className='w-[10vw] flex justify-center flex-col'>
-                <div className='w-[10vw] flex justify-start mb-3'>
-                    <Image className="w-5 h-5 mr-4 mt-1" src={appleImage}></Image>
-                    <LoginCom texto = "Login com Apple"></LoginCom>
-                </div>
-                <div className='w-[10vw] flex justify-start'>
-                    <Image className="w-5 h-5 mr-4 mt-0.5" src={googleImage}></Image>
-                    <LoginCom texto = "Login com Google"></LoginCom>
-                </div>
+            <div className='w-[15vw] flex justify-center items-center flex-col'>
 
+                    <Link className='w-[10vw] flex justify-start mb-3' href={"#"}>
+                        <Image className="w-5 h-5 mr-4 mt-1" src={appleImage}></Image>
+                        <LoginCom texto = "Login com Apple" imagem = {appleImage}></LoginCom>
+                    </Link>
+
+                    <Link className='w-[10vw] flex justify-start' href={"#"}>
+                        <Image className="w-5 h-5 mr-4 mt-0.5" src={googleImage}></Image>
+                        <LoginCom texto = "Login com Google"></LoginCom>
+                    </Link>
+            </div>
+
+            <div className=' text-xs mt-4 flex justify-center items-center gap-x-1'>Não tem uma conta?
+                <Link href={"/cadastro"} className=' font-semibold text-blue-400 hover:underline hover:text-blue-600'>
+                    Crie uma
+                </Link>
             </div>
         </div>
     </div> 
